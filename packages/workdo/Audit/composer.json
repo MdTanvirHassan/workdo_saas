@@ -1,0 +1,45 @@
+{
+    "name": "workdo/audit",
+    "description": "Description for audit package",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "audit/audit-php": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Workdo\\Audit\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "WorkDo",
+            "email": "support@workdo.io"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Workdo\\Audit\\Providers\\AuditServiceProvider",
+                "Workdo\\Audit\\Providers\\ViewComposer",
+                "Workdo\\Audit\\Providers\\SalesInvoicePayment",
+                "Workdo\\Audit\\Providers\\InvoicePayment",
+                "Workdo\\Audit\\Providers\\RetainerPayment",
+                "Workdo\\Audit\\Providers\\CoursePayment",
+                "Workdo\\Audit\\Providers\\HotelRoomBookingPayment",
+                "Workdo\\Audit\\Providers\\propertyInvoicePayment",
+                "Workdo\\Audit\\Providers\\VehicleBookingPayment",
+                "Workdo\\Audit\\Providers\\MembershipPlanPayment",
+                "Workdo\\Audit\\Providers\\BeautySpaSerivceProvider",
+                "Workdo\\Audit\\Providers\\ParkingSerivceProvider",
+                "Workdo\\Audit\\Providers\\ContentPayment",
+                "Workdo\\Audit\\Providers\\MovieShowBookingServiceProvider",
+                "Workdo\\Audit\\Providers\\EventShowBookingServiceProvider",
+                "Workdo\\Audit\\Providers\\BookingsServiceProvider",
+                "Workdo\\Audit\\Providers\\FacilitiesSerivceProvider",
+                "Workdo\\Audit\\Providers\\CaseFeePayment",
+                "Workdo\\Audit\\Providers\\ChildFeePayment"
+            ]
+        }
+    }
+}
